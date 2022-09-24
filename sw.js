@@ -31,7 +31,7 @@ self.addEventListener('fetch', (event) =>{
     }
     if(event.request.url.includes('.jpg')){
         
-        const respuesta = fetch('images/imagen2.jpg');
+        const respuesta = fetch('./images/imagen2.jpg');
         
         event.respondWith(respuesta);
     }
